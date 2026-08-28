@@ -25,6 +25,8 @@
 
 ## 실행하기
 
+이 앱을 실행하려면 Node.js 24 이상과 pnpm이 필요합니다.
+
 이 앱은 `codeit-fs-nextjs-backend-support`가 `http://localhost:5005`에서 실행 중이어야 합니다.
 
 ```bash
@@ -34,15 +36,5 @@ pnpm dev
 ```
 
 브라우저에서 `http://localhost:3000`을 엽니다.
-
-## 검증 환경
-
-- Node.js 24 이상
-- pnpm 11
-- Next.js 16.3.3
-- React 19.2.8
-- Vanilla Extract 1.21.2
-
-`pnpm lint`, `pnpm build`, 프로덕션 실행에서 홈·검색·상세·리뷰 저장·404 흐름을 검증했습니다.
 
 영화 데이터와 이미지는 TMDB API를 사용합니다. 이 프로젝트는 TMDB의 보증이나 인증을 받은 제품이 아닙니다.
