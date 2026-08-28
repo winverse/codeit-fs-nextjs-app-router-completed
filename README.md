@@ -37,7 +37,7 @@ pnpm dev
 
 ## 검증 환경
 
-- Node.js 24
+- Node.js 24 이상
 - pnpm 11
 - Next.js 16.3.3
 - React 19.2.8
