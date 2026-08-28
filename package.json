@@ -1,0 +1,27 @@
+{
+  "name": "codeit-fs-nextjs-app-router-completed",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "1.21.2",
+    "next": "16.3.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@vanilla-extract/next-plugin": "2.5.2",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.3"
+  },
+  "packageManager": "pnpm@11.24.0"
+}
