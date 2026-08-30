@@ -9,7 +9,7 @@
 - URL 쿼리 스트링과 연결된 영화 검색
 - 영화 정보와 기존 리뷰를 보여 주는 상세 화면
 - 존재하지 않는 영화를 처리하는 404 화면
-- Server Function으로 동작하는 리뷰 작성 폼
+- Server Function을 사용하는 리뷰 작성 폼
 - `Suspense`와 스켈레톤 UI를 이용한 로딩 상태
 - Cache Components, `use cache`, `cacheLife`를 이용한 인기 영화 캐시
 - 오류 경계와 다시 시도 UI
@@ -27,7 +27,7 @@
 
 이 앱을 실행하려면 Node.js 24 이상과 pnpm이 필요합니다.
 
-이 앱은 `codeit-fs-nextjs-backend-support`가 `http://localhost:5005`에서 실행 중이어야 합니다.
+또한 `codeit-fs-nextjs-backend-support` 지원 서버가 `http://localhost:5005`에서 실행 중이어야 합니다.
 
 ```bash
 cp .env.example .env.local
@@ -37,4 +37,4 @@ pnpm dev
 
 브라우저에서 `http://localhost:3000`을 엽니다.
 
-영화 데이터와 이미지는 TMDB API를 사용합니다. 이 프로젝트는 TMDB의 보증이나 인증을 받은 제품이 아닙니다.
+영화 데이터와 이미지는 TMDB API에서 가져옵니다. 이 프로젝트는 TMDB의 보증이나 인증을 받은 제품이 아닙니다.
