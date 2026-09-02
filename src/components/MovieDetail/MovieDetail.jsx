@@ -27,10 +27,7 @@ export default function MovieDetail({
 
   return (
     <div className={styles.container}>
-      <div
-        className={styles.coverImgContainer}
-        style={coverStyle}
-      >
+      <div className={styles.coverImgContainer} style={coverStyle}>
         {hasPoster ? (
           <Image
             src={posterPath}
@@ -40,10 +37,7 @@ export default function MovieDetail({
             className={styles.coverImg}
           />
         ) : (
-          <div
-            className={styles.coverPlaceholder}
-            aria-label="포스터 없음"
-          />
+          <div className={styles.coverPlaceholder} aria-label="포스터 없음" />
         )}
       </div>
 

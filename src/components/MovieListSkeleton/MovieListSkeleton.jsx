@@ -8,9 +8,7 @@ export default function MovieListSkeleton({ count }) {
       {Array(count)
         .fill(0)
         .map((_, idx) => (
-          <MovieItemSkeleton
-            key={`movie-skeleton-${idx}`}
-          />
+          <MovieItemSkeleton key={`movie-skeleton-${idx}`} />
         ))}
     </div>
   );

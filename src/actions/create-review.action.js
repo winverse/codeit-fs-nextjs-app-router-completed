@@ -8,12 +8,9 @@ export async function createReviewAction(formData) {
   const rawAuthor = formData.get("author");
   const rawContent = formData.get("content");
 
-  const movieId =
-    typeof rawMovieId === "string" ? Number(rawMovieId) : NaN;
-  const author =
-    typeof rawAuthor === "string" ? rawAuthor.trim() : "";
-  const content =
-    typeof rawContent === "string" ? rawContent.trim() : "";
+  const movieId = typeof rawMovieId === "string" ? Number(rawMovieId) : NaN;
+  const author = typeof rawAuthor === "string" ? rawAuthor.trim() : "";
+  const content = typeof rawContent === "string" ? rawContent.trim() : "";
 
   const isValid =
     Number.isSafeInteger(movieId) &&

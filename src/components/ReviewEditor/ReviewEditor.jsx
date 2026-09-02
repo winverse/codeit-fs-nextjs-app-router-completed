@@ -6,16 +6,8 @@ export default function ReviewEditor({ movieId }) {
   return (
     <section>
       <h3>리뷰 작성하기</h3>
-      <form
-        className={styles.form}
-        action={createReviewAction}
-      >
-        <input
-          name="movieId"
-          value={movieId}
-          hidden={true}
-          readOnly={true}
-        />
+      <form className={styles.form} action={createReviewAction}>
+        <input name="movieId" value={movieId} hidden={true} readOnly={true} />
         <input
           name="author"
           placeholder="작성자"

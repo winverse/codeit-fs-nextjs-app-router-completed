@@ -2,13 +2,10 @@
 import { globalStyle } from "@vanilla-extract/css";
 
 // 기본 여백 초기화
-globalStyle(
-  "h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote",
-  {
-    margin: 0,
-    padding: 0,
-  },
-);
+globalStyle("h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote", {
+  margin: 0,
+  padding: 0,
+});
 
 // 리스트 스타일 초기화
 globalStyle("ul, ol", {

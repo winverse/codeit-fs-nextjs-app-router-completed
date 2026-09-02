@@ -4,15 +4,8 @@ import * as styles from "./Footer.css.js";
 
 export default function Footer() {
   return (
-    <footer
-      className={styles.container}
-      aria-label="TMDB 출처"
-    >
-      <a
-        href="https://www.themoviedb.org"
-        target="_blank"
-        rel="noreferrer"
-      >
+    <footer className={styles.container} aria-label="TMDB 출처">
+      <a href="https://www.themoviedb.org" target="_blank" rel="noreferrer">
         <Image
           src="/images/tmdb-logo.svg"
           width={70}
@@ -22,8 +15,7 @@ export default function Footer() {
         />
       </a>
       <p>
-        This product uses the TMDB API but is not endorsed or certified by
-        TMDB.
+        This product uses the TMDB API but is not endorsed or certified by TMDB.
       </p>
     </footer>
   );

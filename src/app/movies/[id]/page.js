@@ -7,9 +7,7 @@ import ReviewEditor from "@/components/ReviewEditor";
 async function MovieContent({ params }) {
   const { id } = await params;
 
-  const response = await fetch(
-    `${process.env.API_URL}/api/movies/${id}`,
-  );
+  const response = await fetch(`${process.env.API_URL}/api/movies/${id}`);
 
   if (response.status === 404) notFound();
   if (!response.ok) {

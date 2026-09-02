@@ -8,9 +8,7 @@ async function SearchResult({ keyword }) {
   if (!keyword) return <div>검색어를 입력하세요.</div>;
 
   const response = await fetch(
-    `${process.env.API_URL}/api/movies/search?q=${encodeURIComponent(
-      keyword,
-    )}`,
+    `${process.env.API_URL}/api/movies/search?q=${encodeURIComponent(keyword)}`,
   );
   if (!response.ok) {
     return <div>검색 과정에서 오류가 발생했습니다.</div>;
@@ -33,10 +31,7 @@ async function SearchContent({ searchParams }) {
   const trimmed = keyword.trim();
 
   return (
-    <Suspense
-      key={trimmed}
-      fallback={<MovieListSkeleton count={3} />}
-    >
+    <Suspense key={trimmed} fallback={<MovieListSkeleton count={3} />}>
       <SearchResult keyword={trimmed} />
     </Suspense>
   );

@@ -18,10 +18,7 @@ export default function MovieItem({
     : "평점 정보 없음";
 
   return (
-    <Link
-      href={`/movies/${id}`}
-      className={styles.container}
-    >
+    <Link href={`/movies/${id}`} className={styles.container}>
       {hasPoster ? (
         <Image
           src={posterPath}
@@ -31,17 +28,12 @@ export default function MovieItem({
           className={styles.coverImg}
         />
       ) : (
-        <div
-          className={styles.coverPlaceholder}
-          aria-label="포스터 없음"
-        />
+        <div className={styles.coverPlaceholder} aria-label="포스터 없음" />
       )}
       <div className={styles.info}>
         <div className={styles.title}>{title}</div>
         {overview && (
-          <div className={styles.subTitle}>
-            {overview.slice(0, 100)}...
-          </div>
+          <div className={styles.subTitle}>{overview.slice(0, 100)}...</div>
         )}
         <div className={styles.author}>
           {releaseLabel} | ⭐ {voteLabel}
