@@ -1,11 +1,9 @@
 // 파일: src/components/PopularMovies/PopularMovies.jsx
-import { cacheLife } from "next/cache";
 import MovieList from "@/components/MovieList";
 import * as styles from "./PopularMovies.css.js";
 
 async function getPopularMovies() {
   "use cache";
-  cacheLife("movieCatalog");
 
   const response = await fetch(
     `${process.env.API_URL}/api/movies`,

@@ -11,7 +11,7 @@
 - 존재하지 않는 영화를 처리하는 404 화면
 - Server Function을 사용하는 리뷰 작성 폼
 - `Suspense`와 스켈레톤 UI를 이용한 로딩 상태
-- Cache Components, `use cache`, `cacheLife`를 이용한 인기 영화 캐시
+- Cache Components와 `use cache`를 이용한 인기 영화 캐시
 - 오류 경계와 다시 시도 UI
 
 ## 주요 화면

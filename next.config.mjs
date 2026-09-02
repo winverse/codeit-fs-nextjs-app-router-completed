@@ -10,13 +10,6 @@ const nextConfig = {
   reactStrictMode: true,
   reactCompiler: true,
   cacheComponents: true,
-  cacheLife: {
-    movieCatalog: {
-      stale: 5 * 60,
-      revalidate: 60 * 60,
-      expire: 24 * 60 * 60,
-    },
-  },
   images: {
     remotePatterns: [
       {
