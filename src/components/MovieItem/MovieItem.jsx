@@ -19,7 +19,7 @@ export default function MovieItem({
 
   return (
     <Link
-      href={`/movie/${id}`}
+      href={`/movies/${id}`}
       className={styles.container}
     >
       {hasPoster ? (

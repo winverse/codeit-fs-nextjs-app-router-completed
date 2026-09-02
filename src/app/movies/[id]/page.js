@@ -1,4 +1,4 @@
-// 파일: src/app/movie/[id]/page.js
+// 파일: src/app/movies/[id]/page.js
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import MovieDetail from "@/components/MovieDetail";

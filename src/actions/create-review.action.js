@@ -50,7 +50,7 @@ export async function createReviewAction(formData) {
       throw new Error(`Review creation failed: ${response.status}`);
     }
 
-    revalidatePath(`/movie/${movieId}`);
+    revalidatePath(`/movies/${movieId}`);
 
     return {
       status: true,
