@@ -1,2 +1,2 @@
-// 파일: src/components/MovieDetail/index.js
-export { default } from "./MovieDetail";
+// src/components/MovieDetail/index.js
+export { default as MovieDetail } from "./MovieDetail";

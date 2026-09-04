@@ -1,7 +1,7 @@
-// 파일: src/app/layout.js
+// src/app/layout.js
 import "@/styles/reset.css.js";
 import "@/styles/globals.css.js";
-import GlobalLayout from "@/components/layouts/GlobalLayout";
+import { GlobalLayout } from "@/components/layouts/GlobalLayout";
 
 export const metadata = {
   title: "App Router Starter",

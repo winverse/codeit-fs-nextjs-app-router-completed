@@ -1,4 +1,4 @@
-// 파일: src/components/Footer/Footer.jsx
+// src/components/Footer/Footer.jsx
 import Image from "next/image";
 import * as styles from "./Footer.css.js";
 

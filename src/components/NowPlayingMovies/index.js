@@ -1,2 +1,2 @@
-// 파일: src/components/NowPlayingMovies/index.js
-export { default } from "./NowPlayingMovies";
+// src/components/NowPlayingMovies/index.js
+export { default as NowPlayingMovies } from "./NowPlayingMovies";

@@ -1,4 +1,4 @@
-// 파일: src/app/movies/[id]/not-found.js
+// src/app/movies/[id]/not-found.js
 import Link from "next/link";
 
 export default function NotFound() {

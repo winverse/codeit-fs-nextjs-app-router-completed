@@ -1,8 +1,8 @@
-// 파일: src/app/movies/[id]/page.js
+// src/app/movies/[id]/page.js
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import MovieDetail from "@/components/MovieDetail";
-import ReviewEditor from "@/components/ReviewEditor";
+import { MovieDetail } from "@/components/MovieDetail";
+import { ReviewEditor } from "@/components/ReviewEditor";
 
 async function MovieContent({ params }) {
   const { id } = await params;

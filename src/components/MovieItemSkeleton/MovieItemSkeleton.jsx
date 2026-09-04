@@ -1,4 +1,4 @@
-// 파일: src/components/MovieItemSkeleton/MovieItemSkeleton.jsx
+// src/components/MovieItemSkeleton/MovieItemSkeleton.jsx
 import * as styles from "./MovieItemSkeleton.css.js";
 
 export default function MovieItemSkeleton() {

@@ -1,4 +1,4 @@
-// 파일: src/styles/globals.css.js
+// src/styles/globals.css.js
 import { globalStyle } from "@vanilla-extract/css";
 
 globalStyle("html, body", {

@@ -1,4 +1,4 @@
-// 파일: src/components/MovieLikeButton/MovieLikeButton.jsx
+// src/components/MovieLikeButton/MovieLikeButton.jsx
 "use client";
 
 import { useState } from "react";

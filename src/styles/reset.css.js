@@ -1,4 +1,4 @@
-// 파일: src/styles/reset.css.js
+// src/styles/reset.css.js
 import { globalStyle } from "@vanilla-extract/css";
 
 // 기본 여백 초기화

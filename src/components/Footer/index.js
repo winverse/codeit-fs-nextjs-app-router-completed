@@ -1,2 +1,2 @@
-// 파일: src/components/Footer/index.js
-export { default } from "./Footer";
+// src/components/Footer/index.js
+export { default as Footer } from "./Footer";

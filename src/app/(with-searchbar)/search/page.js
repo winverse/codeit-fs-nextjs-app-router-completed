@@ -1,7 +1,7 @@
-// 파일: src/app/(with-searchbar)/search/page.js
+// src/app/(with-searchbar)/search/page.js
 import { Suspense } from "react";
-import MovieItem from "@/components/MovieItem";
-import MovieListSkeleton from "@/components/MovieListSkeleton";
+import { MovieItem } from "@/components/MovieItem";
+import { MovieListSkeleton } from "@/components/MovieListSkeleton";
 import * as styles from "@/styles/search.css.js";
 
 async function SearchResult({ keyword }) {

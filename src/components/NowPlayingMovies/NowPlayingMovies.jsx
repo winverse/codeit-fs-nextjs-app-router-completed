@@ -1,5 +1,5 @@
-// 파일: src/components/NowPlayingMovies/NowPlayingMovies.jsx
-import MovieList from "@/components/MovieList";
+// src/components/NowPlayingMovies/NowPlayingMovies.jsx
+import { MovieList } from "@/components/MovieList";
 import * as styles from "./NowPlayingMovies.css.js";
 
 async function getNowPlayingMovies() {

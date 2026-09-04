@@ -1,4 +1,4 @@
-// 파일: src/components/layouts/GlobalLayout/GlobalLayout.css.js
+// src/components/layouts/GlobalLayout/GlobalLayout.css.js
 import { style } from "@vanilla-extract/css";
 
 export const container = style({

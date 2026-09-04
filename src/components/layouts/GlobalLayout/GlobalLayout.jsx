@@ -1,7 +1,7 @@
-// 파일: src/components/layouts/GlobalLayout/GlobalLayout.jsx
+// src/components/layouts/GlobalLayout/GlobalLayout.jsx
 import Link from "next/link";
 import * as styles from "./GlobalLayout.css.js";
-import Footer from "@/components/Footer";
+import { Footer } from "@/components/Footer";
 
 export default function GlobalLayout({ children }) {
   return (

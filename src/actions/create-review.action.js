@@ -1,4 +1,4 @@
-// 파일: src/actions/create-review.action.js
+// src/actions/create-review.action.js
 "use server";
 
 import { revalidatePath } from "next/cache";

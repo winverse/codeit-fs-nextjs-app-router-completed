@@ -1,4 +1,4 @@
-// 파일: src/components/NowPlayingMovies/NowPlayingMovies.css.js
+// src/components/NowPlayingMovies/NowPlayingMovies.css.js
 import { style } from "@vanilla-extract/css";
 
 export const container = style({

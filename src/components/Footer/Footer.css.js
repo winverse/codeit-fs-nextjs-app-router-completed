@@ -1,4 +1,4 @@
-// 파일: src/components/Footer/Footer.css.js
+// src/components/Footer/Footer.css.js
 import { style } from "@vanilla-extract/css";
 
 export const container = style({

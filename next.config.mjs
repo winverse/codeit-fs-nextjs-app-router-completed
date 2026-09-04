@@ -1,4 +1,4 @@
-// 파일: next.config.mjs
+// next.config.mjs
 import { createVanillaExtractPlugin } from "@vanilla-extract/next-plugin";
 
 const withVanillaExtract = createVanillaExtractPlugin({

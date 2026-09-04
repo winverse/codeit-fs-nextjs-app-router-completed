@@ -1,8 +1,8 @@
-// 파일: src/components/MovieList/MovieList.jsx
+// src/components/MovieList/MovieList.jsx
 "use client";
 
 import { use, useState } from "react";
-import MovieItem from "@/components/MovieItem";
+import { MovieItem } from "@/components/MovieItem";
 
 export default function MovieList({ moviesPromise, limit, className }) {
   const { movies } = use(moviesPromise);

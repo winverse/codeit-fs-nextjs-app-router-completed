@@ -1,4 +1,4 @@
-// 파일: src/components/ReviewEditor/ReviewEditor.jsx
+// src/components/ReviewEditor/ReviewEditor.jsx
 import { createReviewAction } from "@/actions/create-review.action";
 import * as styles from "./ReviewEditor.css.js";
 

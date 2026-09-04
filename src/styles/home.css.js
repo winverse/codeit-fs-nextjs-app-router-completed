@@ -1,4 +1,4 @@
-// 파일: src/styles/home.css.js
+// src/styles/home.css.js
 import { style } from "@vanilla-extract/css";
 
 export const container = style({

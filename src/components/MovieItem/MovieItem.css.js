@@ -1,4 +1,4 @@
-// 파일: src/components/MovieItem/MovieItem.css.js
+// src/components/MovieItem/MovieItem.css.js
 import { style } from "@vanilla-extract/css";
 
 export const container = style({

@@ -1,2 +1,2 @@
-// 파일: src/components/MovieListSkeleton/index.js
-export { default } from "./MovieListSkeleton";
+// src/components/MovieListSkeleton/index.js
+export { default as MovieListSkeleton } from "./MovieListSkeleton";

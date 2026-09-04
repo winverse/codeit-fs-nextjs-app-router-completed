@@ -1,4 +1,4 @@
-// 파일: src/components/layouts/SearchLayout/SearchLayout.css.js
+// src/components/layouts/SearchLayout/SearchLayout.css.js
 import { style } from "@vanilla-extract/css";
 
 export const container = style({

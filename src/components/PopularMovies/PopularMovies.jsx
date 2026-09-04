@@ -1,5 +1,5 @@
-// 파일: src/components/PopularMovies/PopularMovies.jsx
-import MovieList from "@/components/MovieList";
+// src/components/PopularMovies/PopularMovies.jsx
+import { MovieList } from "@/components/MovieList";
 import * as styles from "./PopularMovies.css.js";
 
 async function getPopularMovies() {

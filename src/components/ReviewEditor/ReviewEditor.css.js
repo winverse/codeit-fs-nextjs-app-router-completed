@@ -1,4 +1,4 @@
-// 파일: src/components/ReviewEditor/ReviewEditor.css.js
+// src/components/ReviewEditor/ReviewEditor.css.js
 import { style } from "@vanilla-extract/css";
 
 export const form = style({

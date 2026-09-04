@@ -1,4 +1,4 @@
-// 파일: src/app/error.js
+// src/app/error.js
 "use client";
 
 import { useEffect } from "react";

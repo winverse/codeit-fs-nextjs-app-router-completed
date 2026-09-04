@@ -1,4 +1,4 @@
-// 파일: src/components/MovieDetail/MovieDetail.jsx
+// src/components/MovieDetail/MovieDetail.jsx
 import Image from "next/image";
 import * as styles from "./MovieDetail.css.js";
 

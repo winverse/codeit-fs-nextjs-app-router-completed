@@ -1,5 +1,5 @@
-// 파일: src/components/MovieListSkeleton/MovieListSkeleton.jsx
-import MovieItemSkeleton from "@/components/MovieItemSkeleton";
+// src/components/MovieListSkeleton/MovieListSkeleton.jsx
+import { MovieItemSkeleton } from "@/components/MovieItemSkeleton";
 import * as styles from "./MovieListSkeleton.css.js";
 
 export default function MovieListSkeleton({ count }) {

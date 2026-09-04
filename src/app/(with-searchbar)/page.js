@@ -1,8 +1,8 @@
-// 파일: src/app/(with-searchbar)/page.js
+// src/app/(with-searchbar)/page.js
 import { Suspense } from "react";
-import MovieListSkeleton from "@/components/MovieListSkeleton";
-import NowPlayingMovies from "@/components/NowPlayingMovies";
-import PopularMovies from "@/components/PopularMovies";
+import { MovieListSkeleton } from "@/components/MovieListSkeleton";
+import { NowPlayingMovies } from "@/components/NowPlayingMovies";
+import { PopularMovies } from "@/components/PopularMovies";
 import * as styles from "@/styles/home.css.js";
 
 export default function Home() {

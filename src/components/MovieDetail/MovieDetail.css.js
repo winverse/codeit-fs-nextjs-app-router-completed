@@ -1,4 +1,4 @@
-// 파일: src/components/MovieDetail/MovieDetail.css.js
+// src/components/MovieDetail/MovieDetail.css.js
 import { style } from "@vanilla-extract/css";
 
 export const container = style({ position: "relative" });

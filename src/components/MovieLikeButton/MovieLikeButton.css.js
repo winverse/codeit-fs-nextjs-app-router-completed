@@ -1,4 +1,4 @@
-// 파일: src/components/MovieLikeButton/MovieLikeButton.css.js
+// src/components/MovieLikeButton/MovieLikeButton.css.js
 import { style } from "@vanilla-extract/css";
 
 export const button = style({

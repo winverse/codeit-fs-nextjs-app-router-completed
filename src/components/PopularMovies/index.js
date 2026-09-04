@@ -1,2 +1,2 @@
-// 파일: src/components/PopularMovies/index.js
-export { default } from "./PopularMovies";
+// src/components/PopularMovies/index.js
+export { default as PopularMovies } from "./PopularMovies";
