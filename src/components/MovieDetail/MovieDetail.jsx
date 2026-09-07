@@ -7,7 +7,7 @@ export default function MovieDetail({
   tagline,
   overview,
   releaseDate,
-  genres,
+  genres = [],
   runtime,
   posterPath,
   voteAverage,
@@ -18,6 +18,9 @@ export default function MovieDetail({
     ? { backgroundImage: `url('${posterPath}')` }
     : {};
   const releaseLabel = releaseDate || "개봉일 정보 없음";
+  const genreLabel = genres.length
+    ? genres.map((genre) => genre.name).join(", ")
+    : "장르 정보 없음";
   const runtimeLabel = Number.isFinite(runtime)
     ? `${runtime}분`
     : "상영 시간 정보 없음";
@@ -44,8 +47,7 @@ export default function MovieDetail({
       <div className={styles.infoContainer}>
         <div className={styles.title}>{title}</div>
         <div>
-          {releaseLabel} | {genres.map((genre) => genre.name).join(", ")} |{" "}
-          {runtimeLabel} | ⭐ {voteLabel}
+          {releaseLabel} | {genreLabel} | {runtimeLabel} | ⭐ {voteLabel}
         </div>
         {tagline && <div className={styles.tagline}>{tagline}</div>}
         <div className={styles.overview}>
