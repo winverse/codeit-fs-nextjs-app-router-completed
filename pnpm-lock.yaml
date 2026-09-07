@@ -8,7 +8,7 @@ importers:
   .:
     dependencies:
       "@vanilla-extract/css":
-        specifier: 1.21.2
+        specifier: ^1.21.2
         version: 1.21.2
       next:
         specifier: 16.3.4
@@ -21,7 +21,7 @@ importers:
         version: 19.2.8(react@19.2.8)
     devDependencies:
       "@vanilla-extract/next-plugin":
-        specifier: 2.5.2
+        specifier: ^2.5.2
         version: 2.5.2(@swc/helpers@0.5.23)(@types/node@26.4.0)(esbuild@0.28.2)(next@16.3.4(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@26.4.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(terser@5.51.1)(webpack@5.109.2(@swc/core@1.16.1(@swc/helpers@0.5.23))(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.26))
       babel-plugin-react-compiler:
         specifier: 1.0.0
