@@ -7,9 +7,9 @@ const withVanillaExtract = createVanillaExtractPlugin({
 
 /** @type {import("next").NextConfig} */
 const nextConfig = {
+  agentRules: false,
   reactStrictMode: true,
   reactCompiler: true,
-  cacheComponents: true,
   images: {
     remotePatterns: [
       {
@@ -17,11 +17,6 @@ const nextConfig = {
         hostname: "image.tmdb.org",
       },
     ],
-  },
-  logging: {
-    fetches: {
-      fullUrl: true,
-    },
   },
 };
 

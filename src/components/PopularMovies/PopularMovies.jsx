@@ -3,8 +3,6 @@ import { MovieList } from "@/components/MovieList";
 import * as styles from "./PopularMovies.css.js";
 
 async function getPopularMovies() {
-  "use cache";
-
   const response = await fetch(`${process.env.API_URL}/api/movies`);
 
   if (!response.ok) {
