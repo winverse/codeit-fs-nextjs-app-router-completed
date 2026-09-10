@@ -2,6 +2,8 @@
 import { MovieList } from "@/components/MovieList";
 import * as styles from "./NowPlayingMovies.css.js";
 
+export const NOW_PLAYING_LIMIT = 3;
+
 async function getNowPlayingMovies() {
   const response = await fetch(`${process.env.API_URL}/api/movies/now-playing`);
 
@@ -18,7 +20,7 @@ export default function NowPlayingMovies() {
   return (
     <MovieList
       moviesPromise={moviesPromise}
-      limit={3}
+      limit={NOW_PLAYING_LIMIT}
       className={styles.container}
     />
   );

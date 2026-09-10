@@ -1,21 +1,37 @@
 // src/components/PopularMovies/PopularMovies.jsx
 import { MovieList } from "@/components/MovieList";
+import { NOW_PLAYING_LIMIT } from "@/components/NowPlayingMovies";
 import * as styles from "./PopularMovies.css.js";
+
+const POPULAR_LIMIT = 10;
 
 async function getPopularMovies() {
   const response = await fetch(`${process.env.API_URL}/api/movies`);
+  const nowPlayingResponse = await fetch(
+    `${process.env.API_URL}/api/movies/now-playing`,
+  );
 
-  if (!response.ok) {
+  if (!response.ok || !nowPlayingResponse.ok) {
     throw new Error("인기 영화를 불러오지 못했습니다.");
   }
 
-  return response.json();
+  const { movies } = await response.json();
+  const { movies: nowPlayingMovies } = await nowPlayingResponse.json();
+  const shownIds = nowPlayingMovies
+    .slice(0, NOW_PLAYING_LIMIT)
+    .map((movie) => movie.id);
+
+  return { movies: movies.filter((movie) => !shownIds.includes(movie.id)) };
 }
 
 export default function PopularMovies() {
   const moviesPromise = getPopularMovies();
 
   return (
-    <MovieList moviesPromise={moviesPromise} className={styles.container} />
+    <MovieList
+      moviesPromise={moviesPromise}
+      limit={POPULAR_LIMIT}
+      className={styles.container}
+    />
   );
 }
