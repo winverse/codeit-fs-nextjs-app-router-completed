@@ -6,17 +6,19 @@ import * as styles from "./PopularMovies.css.js";
 const POPULAR_LIMIT = 10;
 
 async function getPopularMovies() {
-  const response = await fetch(`${process.env.API_URL}/api/movies`);
-  const nowPlayingResponse = await fetch(
-    `${process.env.API_URL}/api/movies/now-playing`,
-  );
+  const [response, nowPlayingResponse] = await Promise.all([
+    fetch(`${process.env.API_URL}/api/movies`),
+    fetch(`${process.env.API_URL}/api/movies/now-playing`),
+  ]);
 
   if (!response.ok || !nowPlayingResponse.ok) {
     throw new Error("인기 영화를 불러오지 못했습니다.");
   }
 
-  const { movies } = await response.json();
-  const { movies: nowPlayingMovies } = await nowPlayingResponse.json();
+  const [{ movies }, { movies: nowPlayingMovies }] = await Promise.all([
+    response.json(),
+    nowPlayingResponse.json(),
+  ]);
   const shownIds = nowPlayingMovies
     .slice(0, NOW_PLAYING_LIMIT)
     .map((movie) => movie.id);
