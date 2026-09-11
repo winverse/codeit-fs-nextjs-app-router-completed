@@ -13,7 +13,9 @@ export default function SearchLayout({ children }) {
     event.preventDefault();
 
     const query = search.trim();
-    if (!query) return;
+    if (!query) {
+      return;
+    }
 
     router.push(`/search?q=${encodeURIComponent(query)}`);
   };

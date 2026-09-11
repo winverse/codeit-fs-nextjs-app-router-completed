@@ -5,7 +5,9 @@ import { MovieListSkeleton } from "@/components/MovieListSkeleton";
 import * as styles from "@/styles/search.css.js";
 
 async function SearchResult({ keyword }) {
-  if (!keyword) return <div>검색어를 입력하세요.</div>;
+  if (!keyword) {
+    return <div>검색어를 입력하세요.</div>;
+  }
 
   const response = await fetch(
     `${process.env.API_URL}/api/movies/search?q=${encodeURIComponent(keyword)}`,

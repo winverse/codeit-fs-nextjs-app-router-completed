@@ -9,7 +9,9 @@ async function MovieContent({ params }) {
 
   const response = await fetch(`${process.env.API_URL}/api/movies/${id}`);
 
-  if (response.status === 404) notFound();
+  if (response.status === 404) {
+    notFound();
+  }
   if (!response.ok) {
     return <div>영화 정보를 불러올 수 없습니다.</div>;
   }
