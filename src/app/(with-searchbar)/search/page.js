@@ -27,23 +27,15 @@ async function SearchResult({ keyword }) {
   );
 }
 
-async function SearchContent({ searchParams }) {
+export default async function SearchPage({ searchParams }) {
   const { q = "" } = await searchParams;
   const keyword = typeof q === "string" ? q : "";
   const trimmed = keyword.trim();
 
   return (
-    <Suspense key={trimmed} fallback={<MovieListSkeleton count={3} />}>
-      <SearchResult keyword={trimmed} />
-    </Suspense>
-  );
-}
-
-export default function SearchPage({ searchParams }) {
-  return (
     <div className={styles.container}>
-      <Suspense fallback={<MovieListSkeleton count={3} />}>
-        <SearchContent searchParams={searchParams} />
+      <Suspense key={trimmed} fallback={<MovieListSkeleton count={3} />}>
+        <SearchResult keyword={trimmed} />
       </Suspense>
     </div>
   );
