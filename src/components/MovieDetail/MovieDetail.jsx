@@ -40,7 +40,7 @@ export default function MovieDetail({
             className={styles.coverImg}
           />
         ) : (
-          <div className={styles.coverPlaceholder} aria-label="포스터 없음" />
+          <div className={styles.coverPlaceholder} />
         )}
       </div>
 

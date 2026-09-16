@@ -19,7 +19,6 @@ export default function MovieList({ moviesPromise, limit, className }) {
     <>
       <button
         type="button"
-        aria-pressed={sortByRating}
         onClick={() => setSortByRating((current) => !current)}
       >
         {sortByRating ? "기본순으로 보기" : "평점순으로 보기"}

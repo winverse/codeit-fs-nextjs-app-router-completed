@@ -28,7 +28,7 @@ export default function MovieItem({
           className={styles.coverImg}
         />
       ) : (
-        <div className={styles.coverPlaceholder} aria-label="포스터 없음" />
+        <div className={styles.coverPlaceholder} />
       )}
       <div className={styles.info}>
         <div className={styles.title}>{title}</div>

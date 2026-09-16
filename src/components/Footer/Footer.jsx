@@ -4,7 +4,7 @@ import * as styles from "./Footer.css.js";
 
 export default function Footer() {
   return (
-    <footer className={styles.container} aria-label="TMDB 출처">
+    <footer className={styles.container}>
       <a href="https://www.themoviedb.org" target="_blank" rel="noreferrer">
         <Image
           src="/images/tmdb-logo.svg"
