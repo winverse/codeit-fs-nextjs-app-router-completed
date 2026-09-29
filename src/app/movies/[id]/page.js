@@ -33,3 +33,17 @@ export default function MoviePage({ params }) {
     </Suspense>
   );
 }
+
+export async function generateStaticParams() {
+  const response = await fetch(`${process.env.API_URL}/api/movies`);
+
+  if (!response.ok) {
+    throw new Error("영화 목록을 불러오지 못했습니다.");
+  }
+
+  const { movies } = await response.json();
+
+  return movies.slice(0, 10).map((movie) => ({
+    id: String(movie.id),
+  }));
+}
